@@ -5,13 +5,13 @@ A portable device built with the Raspberry Pi Compute module.
 ## Installation
 
 The schematics project is done in KiCad, free and available to most common
-platforms. More information on how to download and install KiCAD can be found in
+platforms. More information on how to download and install KiCad can be found in
 its [official download page][download-kicad].
 
 ## Usage
 
 Clone the sources and browse the package folder. The KiCad project is located in
-`KiCad-project/pi-compute-device.pro`.
+`kicad-project/pi-compute-device.pro`.
 
 ```bash
 git clone https://github.com/marcbperez/pi-compute-device

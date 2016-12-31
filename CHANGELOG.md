@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
+## Unreleased
+
+### Added
+
+  - Power supply module to schematics.
+  - Library for PAM2306AYPKE.
+  - Library for AP7115-25SEG.
+
 ## 0.2.0 - 2016-12-30
 
 ### Added

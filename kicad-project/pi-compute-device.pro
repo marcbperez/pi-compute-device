@@ -1,4 +1,4 @@
-update=domingo, 19 '19e' marzo '19e' 2017, 23:27:59
+update=domingo, 19 '19e' marzo '19e' 2017, 23:22:45
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,6 +66,8 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=ddr2_sodimm_cm3
+LibName30=pam2306aypke
+LibName31=ap7115-25seg
+LibName32=ddr2_sodimm_cm3
 [general]
 version=1

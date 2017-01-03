@@ -1,4 +1,4 @@
-update=domingo, 19 '19e' marzo '19e' 2017, 23:22:45
+update=domingo, 19 '19e' marzo '19e' 2017, 23:20:33
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,16 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=../kicad-test
@@ -68,6 +58,17 @@ LibName28=contrib
 LibName29=valves
 LibName30=pam2306aypke
 LibName31=ap7115-25seg
-LibName32=ddr2_sodimm_cm3
+LibName32=dmg1012t
+LibName33=ddr2_sodimm_cm3
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [general]
 version=1

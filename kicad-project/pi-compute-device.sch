@@ -39,8 +39,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Pi Compute device"
-Date "2017-01-03"
-Rev "0.5.0"
+Date "2017-01-04"
+Rev "0.6.0"
 Comp "marcbperez, Widerware"
 Comment1 ""
 Comment2 ""
@@ -193,18 +193,85 @@ F 3 "" H 6700 7800 50  0000 C CNN
 	1    6700 7800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Micro_SD_Card CON1
+U 1 1 58CD46C9
+P 21500 4900
+F 0 "CON1" H 20850 5500 50  0000 C CNN
+F 1 "Micro_SD_Card" H 22150 5500 50  0000 R CNN
+F 2 "" H 22650 5200 50  0000 C CNN
+F 3 "" H 21500 4900 50  0000 C CNN
+	1    21500 4900
+	1    0    0    -1  
+$EndComp
 Text Label 6200 2250 2    60   ~ 0
 SDX_D2
+Text Label 20050 4600 0    60   ~ 0
+SDX_D2
+Text Label 20050 4700 0    60   ~ 0
+SDX_D3
+Text Label 20050 4800 0    60   ~ 0
+SDX_CMD
 Text Label 6200 2400 2    60   ~ 0
 SDX_D3
 Text Label 6200 1350 2    60   ~ 0
 SDX_CLK
 Text Label 6200 1500 2    60   ~ 0
 SDX_CMD
+Text Label 20050 5000 0    60   ~ 0
+SDX_CLK
+$Comp
+L C C17
+U 1 1 58CD52D0
+P 19600 4850
+F 0 "C17" H 19625 4950 50  0000 L CNN
+F 1 "4.7u" H 19625 4750 50  0000 L CNN
+F 2 "" H 19638 4700 50  0000 C CNN
+F 3 "" H 19600 4850 50  0000 C CNN
+	1    19600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 58CD53D7
+P 19600 5650
+F 0 "#PWR07" H 19600 5400 50  0001 C CNN
+F 1 "GND" H 19600 5500 50  0000 C CNN
+F 2 "" H 19600 5650 50  0000 C CNN
+F 3 "" H 19600 5650 50  0000 C CNN
+	1    19600 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR08
+U 1 1 58CD54B2
+P 19600 4400
+F 0 "#PWR08" H 19600 4250 50  0001 C CNN
+F 1 "+3V3" H 19600 4540 50  0000 C CNN
+F 2 "" H 19600 4400 50  0000 C CNN
+F 3 "" H 19600 4400 50  0000 C CNN
+	1    19600 4400
+	1    0    0    -1  
+$EndComp
+Text Label 20050 5200 0    60   ~ 0
+SDX_D0
+Text Label 20050 5300 0    60   ~ 0
+SDX_D1
 Text Label 6200 1800 2    60   ~ 0
 SDX_D0
 Text Label 6200 1950 2    60   ~ 0
 SDX_D1
+$Comp
+L GND #PWR09
+U 1 1 58CD62F9
+P 22300 5650
+F 0 "#PWR09" H 22300 5400 50  0001 C CNN
+F 1 "GND" H 22300 5500 50  0000 C CNN
+F 2 "" H 22300 5650 50  0000 C CNN
+F 3 "" H 22300 5650 50  0000 C CNN
+	1    22300 5650
+	1    0    0    -1  
+$EndComp
 $Comp
 L Polyfuse F1
 U 1 1 58CD6657
@@ -1509,7 +1576,13 @@ Wire Wire Line
 Wire Wire Line
 	6700 6900 6700 7300
 Wire Wire Line
+	20600 4600 20050 4600
+Wire Wire Line
 	4450 2250 6200 2250
+Wire Wire Line
+	20600 4700 20050 4700
+Wire Wire Line
+	20600 4800 20050 4800
 Wire Wire Line
 	4450 2400 6200 2400
 Wire Wire Line
@@ -1517,9 +1590,22 @@ Wire Wire Line
 Wire Wire Line
 	4450 1350 6200 1350
 Wire Wire Line
+	20600 5000 20050 5000
+Wire Wire Line
+	19600 5000 19600 5650
+Wire Wire Line
+	20600 5100 19600 5100
+Connection ~ 19600 5100
+Wire Wire Line
+	20600 5200 20050 5200
+Wire Wire Line
+	20600 5300 20050 5300
+Wire Wire Line
 	4450 1800 6200 1800
 Wire Wire Line
 	4450 1950 6200 1950
+Wire Wire Line
+	22300 5500 22300 5650
 Wire Wire Line
 	8350 1450 8650 1450
 Wire Wire Line
@@ -1536,6 +1622,15 @@ Wire Wire Line
 Wire Wire Line
 	8450 2150 9150 2150
 Connection ~ 9150 2150
+Wire Wire Line
+	19600 4400 19600 4700
+Wire Wire Line
+	20600 4900 19900 4900
+Wire Wire Line
+	19900 4900 19900 4500
+Wire Wire Line
+	19900 4500 19600 4500
+Connection ~ 19600 4500
 Wire Wire Line
 	9850 1200 9850 1450
 Wire Wire Line
@@ -2574,10 +2669,20 @@ Wire Notes Line
 	18900 6300 12800 6300
 Wire Notes Line
 	12800 6300 12800 3700
+Wire Notes Line
+	19000 6300 19000 3700
+Wire Notes Line
+	19000 3700 22800 3700
+Wire Notes Line
+	22800 3700 22800 6300
+Wire Notes Line
+	22800 6300 19000 6300
 Text Notes 7350 3900 0    60   ~ 0
 GPIO
 Text Notes 12950 3900 0    60   ~ 0
 USB
+Text Notes 19150 3900 0    60   ~ 0
+SD CARD
 Text Notes 7350 800  0    60   ~ 0
 POWER SUPPLY
 Text Label 800  14250 0    60   ~ 0

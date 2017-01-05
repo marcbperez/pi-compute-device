@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
+## 0.7.0 - 2017-01-05
+
+### Added
+
+  - HDMI module to schematics.
+  - Library for AP2331W.
+  - Library for ESD5384.
+  - Library for 47151-1051.
+
 ## 0.6.0 - 2017-01-04
 
 ### Added

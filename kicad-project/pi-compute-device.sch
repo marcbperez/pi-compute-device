@@ -42,7 +42,7 @@ encoding utf-8
 Sheet 1 1
 Title "Pi Compute device"
 Date "2017-01-06"
-Rev "0.7.0"
+Rev "0.8.0"
 Comp "marcbperez, Widerware"
 Comment1 ""
 Comment2 ""

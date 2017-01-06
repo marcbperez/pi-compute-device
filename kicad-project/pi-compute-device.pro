@@ -1,4 +1,3 @@
-update=domingo, 19 '19e' marzo '19e' 2017, 23:18:07
 version=1
 last_client=kicad
 [pcbnew]

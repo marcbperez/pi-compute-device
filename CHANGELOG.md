@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
+## 0.8.0 - 2017-01-06
+
+### Changed
+
+  - DMG1012T pin names for main component.
+  - DMG1012T pin reference on schematics.
+  - Project information for DMG1012T.
+
 ## 0.7.0 - 2017-01-05
 
 ### Added

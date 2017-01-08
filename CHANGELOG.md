@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
+## Unreleased
+
+### Added
+
+  - 1473005 component footprint and library.
+  - 1473005 component datasheet.
+
 ## 0.9.0 - 2017-01-07
 
 ### Added

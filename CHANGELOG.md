@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
+## 0.13.0 - 2017-01-12
+
+### Added
+
+  - DMG1012T component footprint and library.
+  - DMG1012T component datasheet.
+
 ## 0.12.0 - 2017-01-11
 
 ### Added

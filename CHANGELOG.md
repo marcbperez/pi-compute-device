@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
+## 0.15.0 - 2017-01-14
+
+### Added
+
+  - PAM2306AYPKE component footprint and library.
+  - PAM2306AYPKE component datasheet.
+
 ## 0.14.0 - 2017-01-13
 
 ### Added

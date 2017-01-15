@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
+## 0.16.0 - 2017-01-15
+
+### Added
+
+  - 2908-05WB-MG datasheet and footprint.
+  - 10029449-111RLF datasheet and footprint.
+  - 10103594-0001LF datasheet and footprint.
+  - Schematics and board layout preview PDFs.
+  - First partially routed board.
+  - Project netlist.
+  - Stitch footprint for layer stitching.
+
+### Changed
+
+  - 10029449-111RLF as default HDMI connector.
+  - Main project and schematics with new libraries and addons.
+  - PAM2306AYPKE and MF-MSMF200 components.
+  - Git ignore list with new files.
+
 ## 0.15.0 - 2017-01-14
 
 ### Added
